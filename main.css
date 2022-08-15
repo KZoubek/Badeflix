@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(137, 222, 226);
+    background-image: linear-gradient(#5f869a, #8fc9e7);
+    display: flex;
+}
+
+header > img {
+    width: auto;
+    height: 5em;
+    alignment: center;
+    padding: 1em;
+}
