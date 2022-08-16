@@ -14,6 +14,7 @@
     <title>Badeflix</title>
 </head>
 <body>
+
 <!-- Beginn of navbar -->
 <nav class="navbar-light bg-light navbar navbar-expand-sm">
     <!-- to include badeflix logo -->
@@ -42,10 +43,11 @@
     </div>
 </nav>
 
-<!-- collapsable Container for hints or link? -->
+<!-- collapsable Container for hints or link? directly under navbar-->
 <div class="container bg-light">
     <!-- Row with collapsible content -->
     <div class="row">
+        <!-- muss expanden?? -->
         <div class="col text-center">
             <a aria-expanded="false" aria-controls="seedSpecial"
                data-toggle="collapse" href="#seedSpecial">
@@ -69,6 +71,21 @@
     </div>
     <!-- End of row with nav component -->
 </div>
+
+<!-- Address form to communicate with Google maps, collapsabel element with list etc -->
+<form>
+    <div class="form-row">
+        <div class="col-10">
+            <input type="text" class="form-control" placeholder="Adress">
+        </div>
+        <div class="col-auto"> <!-- JS to request data and send date-->
+            <button type=button class="form-control">BLAA
+            </button>
+        </div>
+</form>
+
+<h1>HIER SOLLTEN DANN DIE LISTE RUNTERCOLLAPSEN</h1>
+
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
