@@ -1,12 +1,18 @@
 body {
-    background-color: rgb(137, 222, 226);
-    background-image: linear-gradient(#5f869a, #8fc9e7);
-    display: flex;
+    background-color: rgb(54, 127, 222);
+    /*background-image: linear-gradient(#d75764, #8fc9e7, #ffffff);*/
+    font-family: "Bebas Neue";
+}
+.navbar-light bg-light navbar navbar-expand-sm {
+    background-color: #3898EC;
 }
 
-header > img {
+.nav {
+    background-color: #ffffff;
+}
+/*.navbar img {
     width: auto;
     height: 5em;
     alignment: center;
     padding: 1em;
-}
+}*/

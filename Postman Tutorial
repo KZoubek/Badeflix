@@ -1,0 +1,31 @@
+https://www.youtube.com/watch?v=2oOSnxZ28fA&list=PLM-7VG-sgbtAgGq_pef5y_ruIUBPpUgNJ
+
+Video 1 - Part 1: Send a Request
+Documentation lesen, Base url und immer saven
+
+Video 2 - Part 2: Authorize a Request
+Token sind sensitive data und sollten als variable gespeichert werden. Tab Authorization - Type Bearer Token -
+dann rechtsklick beim token und set as new variable. Dann ist der Token nicht für alle sichtbar. Das ist wichtig,
+wenn man später die Collection shared.
+Initial value: all will see the value if shared - so replace it with "Insert your Token"
+Current value: the actual token but it will be only visible to your account
+
+Video 3: Part 3 Write API Tests
+Es gibt vorgefertigte Codesnippets in JS - nicht selber schreiben und auch nicht verändern. Test MUSS failen beim
+1. Mal
+Wenn man auf Creation testet, muss dann dauernd das Repo verändern. Darum dynamic data wichtig - variable!
+-->prequestit Scripts und dann im Body mit "{{variable name}}"
+
+pm.test("Status code is 201", function () {
+    pm.response.to.have.status(201);
+});
+
+pm.test("Repositary name created", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.name).to.eql(pm.collectionVariables.get("Reponame").replaceAll(" ", "-"));
+});
+
+pm.test("Description created", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.description).to.eql("Lorem Ipsum");
+});
