@@ -1,0 +1,165 @@
+/* -----------------------------------   Overall   --------------------------------- */
+/*@font-face specifies a custom font to display text with */
+@font-face {
+    font-family: 'Avenir';
+    src: url('resources/fonts/Avenir.woff') format('woff');
+}
+/* * selects all elements */
+* {font-family: "Avenir", sans-serif}
+
+body {
+    margin: 0;
+    background-color: #9ae7cd;
+}
+#intro {
+    position: absolute;
+    top: 65px;
+    width: 100%;
+}
+
+/* -----------------------------------   Nav   --------------------------------- */
+
+nav {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    font-family: Avenir;
+    font-size: 1.5em;
+    color: grey;
+}
+#navText {
+    position: absolute;
+    top: 9px;
+    left: 90px;
+}
+#logo {
+    width: 70px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#userIconContainer{
+    position: absolute;
+    top: 12px;
+    right: 80px;
+}
+#user {
+    height: 70px;
+}
+#options {
+    height: 56px;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+#usernameNav{
+    font-family: Avenir;
+    color: grey;
+    position: relative;
+    top: -30px;
+    left: 5%;
+    font-size: small;
+}
+
+/* -----------------------------------   World Map  --------------------------------- */
+
+#worldMap {
+    margin-top: 2px;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* -----------------------------------   PopUp  --------------------------------- */
+
+
+#tip {
+    position: absolute;
+    text-align: center;
+    font-family: Avenir;
+    color: grey;
+    opacity: 60%;
+    height: 24px;
+    border-radius: 30px;
+    border: none;
+    padding-top: 6px;
+}
+#searchText {
+    position: absolute;
+    height: 24px;
+    border-radius: 30px;
+    border: none;
+    text-align: center;
+    font-family: Avenir;
+    font-weight: bold;
+    color: grey;
+    padding-top: 8px;
+}
+/* pseudo element selector with placeholder text for input field*/
+::placeholder {
+    color: lightgray;
+}
+#backUp {
+    position: absolute;
+    width: 15%;
+}
+#popup {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 80px;
+    opacity: 70%;
+}
+.citiesBox {
+    position: absolute;
+    left: 25%;
+    top: 135px;
+    width: 50%;
+    text-align: center;
+}
+/* child combinator selector, all links that are direct children of #citiesDiv */
+#citiesDiv > a {
+    font-family: "Avenir", sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 3;
+    color: grey;
+}
+#errorMessage {
+    font-family: "Avenir", sans-serif;
+    font-size: 1.5em;
+    line-height: 1.7;
+    color: grey;
+}
+
+/* https://stackoverflow.com/questions/12499886/how-to-hide-or-disable-the-google-logo-footer-copyright-on-google-maps-javascr */
+/* attribute selector for links containing the specified string (url) */
+a[href^="http://maps.google.com/maps"],
+a[href^="https://maps.google.com/maps"],
+a[href^="https://www.google.com/maps"] {
+    display: none !important;
+}
+.gm-bundled-control .gmnoprint {
+    display: block;
+}
+.gmnoprint:not(.gm-bundled-control) {
+    display: none;
+}
+
+/* -------------- until here -------------------------*/
+
+#progBar {
+    position: absolute;
+    width: 30%;
+    opacity: 80%;
+    left: 35%;
+    top: 35%;
+}
+
+#warning {
+    position: absolute;
+    font-family: 'Avenir';
+    font-size: 30px;
+    color: grey;
+    top: 50px;
+    left: 50px;
+}

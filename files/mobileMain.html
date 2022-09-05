@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Holify</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0">
+    <script src="mobileMainController.js"></script>
+    <link rel="stylesheet" href="mobileMainStyle.css">
+    <link rel="icon" type="image/png" href="resources/Holify.png">
+</head>
+<body id="body">
+<nav id="nav">
+    <a href="index.html">
+        <img src="resources/Holify.png" id="logo" alt="logo">
+    </a>
+    <p id="navText">HOLIFY</p>
+    <div id="userIconContainer">
+        <!-- event handler using the onclick property of window object, user click starts execution of userLogin()-->
+        <img src="resources/UserIcon.png" id="user" alt="login" onclick="userLogin()">
+    </div>
+    <!-- eventhandler, user click starts execution of blogLibrary()-->
+    <img src="resources/Options.png" id="options" alt="blog" onclick="blogLibrary()">
+</nav>
+
+<div id="worldMap"></div>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTWxNRa3H52kSbaahZtYq-EtnaaYbujGM&callback=initMap"></script>
+
+<div id="buttons"></div>
+
+<footer id="footer">
+</footer>
+
+</body>
+</html>
